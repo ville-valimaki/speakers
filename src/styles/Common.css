@@ -1,0 +1,11 @@
+.paddingSmall {
+  padding-bottom: var(--gutterMini);
+}
+
+.paddingMedium {
+  padding-bottom: var(--gutterHalf);
+}
+
+.paddingLarge {
+  padding-bottom: var(--gutter);
+}

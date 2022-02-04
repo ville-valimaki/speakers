@@ -1,0 +1,10 @@
+.Header1 {
+  color: var(--orange);
+  font-size: var(--fontSizeLarge);
+  text-transform: uppercase;
+}
+
+.Header1 span {
+  color: var(--white);
+  font-size: var(--fontSizeSmall);
+}

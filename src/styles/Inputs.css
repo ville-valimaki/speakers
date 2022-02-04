@@ -1,0 +1,21 @@
+.Input {
+  background-color: var(--darkGrey);
+  border-radius: var(--borderRadius);
+  border: 1px solid var(--borderColor);
+  color: var(--white);
+  font-size: var(--fontSizeMedium);
+  padding: var(--gutterMini);
+  display: block;
+  width: calc(100% - var(--gutter));
+}
+
+.Label {
+  font-size: var(--fontSizeSmall);
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.Label span {
+  display: inline-block;
+  padding-bottom: var(--gutterMini);
+}

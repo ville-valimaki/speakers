@@ -1,0 +1,133 @@
+.Content {
+  width: 100%;
+}
+
+.WithBackground {
+  background-color: var(--grey);
+}
+
+.ContentContainer {
+  width:100%;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.CenteredOnMobile {
+  text-align: center;
+}
+
+.ContentFull {
+  width: 100%;
+}
+
+.ContentHalf {
+  width: 100%;
+}
+
+.ContentHalfFixed {
+  width: 50%;
+}
+
+.ContentHalfFixed.PaddedOnSmall {
+  width: calc(50% - var(--gutterHalf));
+}
+
+.ContentThird {
+  width: 100%;
+}
+
+.ContentQuarter {
+  width: 50%;
+}
+
+.ContentQuarter.PaddedOnSmall {
+  width: calc(50% - var(--gutterHalf));
+}
+
+.ContentQuarterFixed {
+  width: 25%;
+}
+
+.MarginedTop {
+  margin-top: var(--gutterHalf);
+}
+
+.MarginedMini {
+  margin-bottom: var(--gutterMini);
+}
+
+.MarginedSmall {
+  margin-bottom: var(--gutterHalf);
+}
+
+.Margined {
+  margin-bottom: var(--gutter);
+}
+
+.MarginedLarge {
+  margin-bottom: var(--gutterDouble);
+}
+
+.PaddedOnSmall {
+  padding-left:var(--gutterHalf);
+}
+
+@media screen and (min-width: 768px) {
+  .ContentContainer {
+    width: var(--breakpoint);
+  }
+  .ContentHalf {
+    width: 50%;
+  }
+  .ContentHalfFixed.PaddedOnSmall {
+    width: 50%;
+  }
+  .ContentThird {
+    width: 33%;
+  }
+  .ContentQuarter {
+    width: 25%;
+  }
+  .ContentQuarter.PaddedOnSmall {
+    width: 25%;
+  }
+  .ContentThird:last-child {
+    flex: 1;
+  }
+  .CenteredOnMobile {
+    text-align: inherit;
+  }
+  .PaddedOnSmall {
+    padding-left:0;
+  }
+}
+
+/**
+Usage example:
+<div className="Content WithBackground">
+  <div className="ContentContainer">
+      <div className="ContentFull">1</div>
+  </div>
+  <div className="ContentContainer">
+    <div className="ContentHalf">2</div>
+    <div className="ContentHalf">3</div>
+  </div>
+  <div className="ContentContainer">
+    <div className="ContentHalfFixed">2</div>
+    <div className="ContentHalfFixed">3</div>
+  </div>
+  <div className="ContentContainer">
+    <div className="ContentThird">4</div>
+    <div className="ContentThird">5</div>
+    <div className="ContentThird">6</div>
+  </div>
+  <div className="ContentContainer">
+      <div className="ContentQuarter">7</div>
+      <div className="ContentQuarter">8</div>
+      <div className="ContentQuarter">9</div>
+      <div className="ContentQuarter">10</div>
+  </div>
+</div>
+ */

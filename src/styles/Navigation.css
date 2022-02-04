@@ -1,0 +1,38 @@
+.NavItem {
+    width: 100%;
+}
+
+.NavLink {
+    width: calc(100% - var(--gutterSplit));
+    margin-left: var(--gutterHalf);
+}
+
+@media screen and (min-width: 768px) {
+    .NavLink {
+        width: calc(100% - var(--gutter));
+        margin-left: 0;
+    }
+}
+
+.NavLink {
+    cursor: pointer;
+    border:2px solid var(--blue);
+    border-radius: var(--gutterMini);
+    background-color: var(--darkGrey);
+    padding: var(--gutterMini);
+    display: block;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: var(--fontSizeMedium);
+    text-decoration: none;
+}
+
+.NavLink:hover {
+    background-color: var(--black);
+}
+
+.NavLink.NoMargin {
+    margin-left:0;
+}

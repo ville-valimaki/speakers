@@ -1,0 +1,12 @@
+.CrossoverImg {
+    width: 100%;
+    max-width: 98%;
+}
+
+@media screen and (min-width: 768px) {
+    .CrossoverImg {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+

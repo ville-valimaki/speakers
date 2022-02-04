@@ -1,0 +1,77 @@
+html {
+  --gutterMini: 5px;
+  --gutterHalf: 10px;
+  --gutter: 20px;
+  --gutterSplit: 30px;
+  --gutterDouble: 40px;
+
+  --darkGrey: #282c34;
+  --grey: #474D57;
+  --almostWhite: #f0f0f0;
+
+  /* https://coolors.co/fbfef9-191923-0e79b2-bf1363-f39237 */
+  --white: #FBFEF9;
+  --black: #191923;
+  --blue: #0E79B2;
+  --pink: #BF1363;
+  --orange: #fa973b;
+
+  --borderColor: #474646;
+  --borderRadius: 5px;
+
+  --fontSizeSmall:12px;
+  --fontSizeMedium:14px;
+  --fontSizeMediumLarge:16px;
+  --fontSizeLarge:18px;
+
+  --breakpoint: 768px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkGrey);
+}
+
+div, p, span, a, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p, span {
+  color: var(--white);
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  font-weight: bold;
+  font-size: var(--fontSizeMediumLarge);
+}
+
+h4 {
+  font-weight: bold;
+  font-size: var(--fontSizeMedium);
+}
+
+p, span, a, div {
+  font-size: var(--fontSizeMedium);
+}
+
+a, a:visited {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+a:hover {
+  color: var(--white);
+}
+
