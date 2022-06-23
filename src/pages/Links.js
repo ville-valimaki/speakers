@@ -1,6 +1,3 @@
-
-import '../styles/Common.css';
-
 function Links() {
   return (
     <div className="ContentContainer MarginedSmall">

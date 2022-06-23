@@ -1,17 +1,14 @@
-
-import '../styles/Common.css';
-
 function Amplifiers() {
   return (
     <div className="ContentContainer MarginedSmall">
         <div className="ContentFull Margined PaddedOnSmall">
             <h2 className="paddingMedium">Amplifiers</h2>
             <p className="paddingSmall">With these introductions you will gain some basic understanding of concepts that are related in designing and building your own amplifier. Questions answered are:</p>
-            <p>
-                - How to rectify AC to DC <br />
-                - Rectifying basics <br />
-                - Understanding the capacitor need
-            </p>
+            <ul>
+                <li>How to rectify AC to DC</li>
+                <li>Rectifying basics</li>
+                <li>Understanding the capacitor need</li>
+            </ul>
         </div>
         <div className="ContentHalf MarginedSmall PaddedOnSmall">
             <h3 className="MarginedSmall">Rectifying alternate current</h3>

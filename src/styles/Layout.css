@@ -74,6 +74,18 @@
   padding-left:var(--gutterHalf);
 }
 
+.paddingSmall {
+  padding-bottom: var(--gutterMini);
+}
+
+.paddingMedium {
+  padding-bottom: var(--gutterHalf);
+}
+
+.paddingLarge {
+  padding-bottom: var(--gutter);
+}
+
 @media screen and (min-width: 768px) {
   .ContentContainer {
     width: var(--breakpoint);
@@ -101,6 +113,9 @@
   }
   .PaddedOnSmall {
     padding-left:0;
+  }
+  .ContentHalf p {
+    padding-right: var(--gutterHalf);
   }
 }
 

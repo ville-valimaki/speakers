@@ -6,7 +6,6 @@ import crossover2 from '../img/crossover2.png';
 
 import '../styles/Inputs.css';
 import '../styles/Crossovers.css';
-import '../styles/Common.css';
 
 class Crossovers extends Component {
 

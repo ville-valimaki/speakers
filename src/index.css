@@ -37,12 +37,12 @@ body {
   background-color: var(--darkGrey);
 }
 
-div, p, span, a, h1, h2, h3, h4 {
+div, p, span, a, h1, h2, h3, h4, ul {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, p, span {
+h1, h2, h3, h4, p, span, ul {
   color: var(--white);
 }
 
@@ -63,6 +63,10 @@ h4 {
 
 p, span, a, div {
   font-size: var(--fontSizeMedium);
+}
+
+ul {
+  list-style-position: inside;
 }
 
 a, a:visited {

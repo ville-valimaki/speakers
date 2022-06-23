@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import '../styles/Inputs.css';
 import '../styles/Speakers.css';
-import '../styles/Common.css';
 
 import { Calculator } from "../util/Calculator";
 
