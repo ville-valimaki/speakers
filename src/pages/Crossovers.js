@@ -89,18 +89,18 @@ class Crossovers extends Component {
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <h3>First degree</h3>
-                    <p className="ResultElement">L1: {this.state.firstL1}</p>
-                    <p className="ResultElement">C1: {this.state.firstC1}</p>
+                    <p className="ResultElement FloatOnSmall">L1: {this.state.firstL1}</p>
+                    <p className="ResultElement FloatOnSmall">C1: {this.state.firstC1}</p>
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <img className="CrossoverImg" src={crossover1} alt="First degree crossover" />
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <h3>Second degree</h3>
-                    <p className="ResultElement">L1: {this.state.secondL1}</p>
-                    <p className="ResultElement">L2: {this.state.secondL2}</p>
-                    <p className="ResultElement">C1: {this.state.secondC1}</p>
-                    <p className="ResultElement">C2: {this.state.secondC2}</p>
+                    <p className="ResultElement FloatOnSmall">L1: {this.state.secondL1}</p>
+                    <p className="ResultElement FloatOnSmall">L2: {this.state.secondL2}</p>
+                    <p className="ResultElement FloatOnSmall">C1: {this.state.secondC1}</p>
+                    <p className="ResultElement FloatOnSmall">C2: {this.state.secondC2}</p>
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <img className="CrossoverImg" src={crossover2} alt="Second degree crossover" />

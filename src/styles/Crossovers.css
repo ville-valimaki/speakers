@@ -3,10 +3,18 @@
     max-width: 98%;
 }
 
+.ResultElement.FloatOnSmall {
+    display: inline-block;
+    min-width: 45%;
+    max-width: 45%;
+}
+
 @media screen and (min-width: 768px) {
     .CrossoverImg {
         width: 100%;
         max-width: 100%;
     }
+    .ResultElement.FloatOnSmall {
+        display: block;
+    }
 }
-
