@@ -9,19 +9,19 @@ function Links() {
             <h4>Crossover calculator</h4>
         </div>
         <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-            <a href="https://www.v-cap.com/speaker-crossover-calculator.php">V-cap</a>
+            <a target="_blank" rel="noreferrer" href="https://www.v-cap.com/speaker-crossover-calculator.php">V-cap</a>
         </div>
         <div className="ContentQuarter MarginedSmall PaddedOnSmall">
             <h4>Enclosure theory</h4>
         </div>
         <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-            <a href="http://www.quarter-wave.com/">Quarter wave</a>
+            <a target="_blank" rel="noreferrer" href="http://www.quarter-wave.com/">Quarter wave</a>
         </div>
         <div className="ContentQuarter MarginedSmall PaddedOnSmall">
             <h4>Rectifying basics</h4>
         </div>
         <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-            <a href="https://www.electronicsforu.com/technology-trends/learn-electronics/half-full-wave-rectifier-basics">Electronics forum</a>
+            <a target="_blank" rel="noreferrer" href="https://www.electronicsforu.com/technology-trends/learn-electronics/half-full-wave-rectifier-basics">Electronics forum</a>
         </div>
     </div>
   );

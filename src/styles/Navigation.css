@@ -14,7 +14,7 @@
     }
 }
 
-.NavLink {
+.NavLink, .NavLink:visited {
     cursor: pointer;
     border:2px solid var(--blue);
     border-radius: var(--gutterMini);
@@ -31,6 +31,7 @@
 
 .NavLink:hover {
     background-color: var(--black);
+    color: var(--orange);
 }
 
 .NavLink.NoMargin {
