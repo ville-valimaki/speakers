@@ -1,7 +1,9 @@
-import './styles/Layout.css';
 import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
+import { createBrowserHistory } from "history";
+// import {useEffect } from 'react';
 
+import './styles/Layout.css';
 import Header from './Header';
 import Navigation from './Navigation';
 import Speakers from './pages/Speakers';
@@ -10,8 +12,16 @@ import Crossovers from './pages/Crossovers';
 import Links from './pages/Links';
 
 ReactGA.initialize("G-NS6ZN3TXV4");
+const history = createBrowserHistory();
+history.listen(location => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.send(location.pathname);
+});
 
 function App() {
+//    useEffect(() => {
+//        ReactGA.pageview(window.location.pathname + window.location.search);
+//    }, []);
     return (
       <div className="Content">
         <Header/>
