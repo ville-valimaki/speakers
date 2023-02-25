@@ -1,3 +1,7 @@
+import ReactGA from "react-ga4";
+
+ReactGA.send({ hitType: "pageview", page: "/amplifiers" });
+
 function Amplifiers() {
   return (
     <div className="ContentContainer MarginedSmall">
