@@ -11,7 +11,7 @@ import Amplifiers from './pages/Amplifiers';
 import Crossovers from './pages/Crossovers';
 import Links from './pages/Links';
 
-ReactGA.initialize("G-NS6ZN3TXV4");
+ReactGA.initialize("G-VM70XJBYK1");
 const history = createBrowserHistory();
 history.listen(location => {
     ReactGA.set({ page: location.pathname });
