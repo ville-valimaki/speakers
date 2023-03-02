@@ -25,9 +25,9 @@ When generating commit messages please refrain to patterns below:
 
 ## Hosting
 
-Since this project doesn't need any integrations with a backend it can be staticly hosted from platforms like AWS S3 with CDN in front.
+Since this project is not dependant of any backend it can be statically hosted from platforms like AWS S3 with CDN in front.
 
-For ready made solution see [AWS Static hosting template](https://github.com/ville-valimaki/aws/tree/main/statichosting)
+For ready-made solution see [AWS Static hosting template](https://github.com/ville-valimaki/aws/tree/main/statichosting)
 
 
 ## Available Scripts
