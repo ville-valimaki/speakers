@@ -29,6 +29,9 @@ Since this project is not dependant of any backend it can be statically hosted f
 
 For ready-made solution see [AWS Static hosting template](https://github.com/ville-valimaki/aws/tree/main/statichosting)
 
+## TODO
+- Rely more on css grid / flexbox (not used originally just out of curiosity)
+- Introduce TS
 
 ## Available Scripts
 
@@ -44,6 +47,7 @@ Run tests
 
 Builds the app for production to the `build` folder.\
 
-## Based on
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Bootstrapped with:
+[Create React App](https://github.com/facebook/create-react-app).
