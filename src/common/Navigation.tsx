@@ -23,7 +23,7 @@ function Navigation() {
         </div>
         <div className="ContentQuarter MarginedSmall">
             <div className="NavItem">
-                <a href="/speakers/src/pages/Links" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/links', { replace: true })}}>Links</a>
+                <a href="/speakers/src/pages/Links.tsx" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/links', { replace: true })}}>Links</a>
             </div>
         </div>
     </div>
