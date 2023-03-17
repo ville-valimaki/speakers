@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { CrossoverCalculator } from "../util/CrossoverCalculator";
-import ReactGA from "react-ga4";
 
 import crossover1 from '../img/crossover1.png';
 import crossover2 from '../img/crossover2.png';
 
 import '../styles/Inputs.css';
 import '../styles/Crossovers.css';
-
-ReactGA.send({ hitType: "pageview", page: "/crossovers" });
 
 class Crossovers extends Component {
 

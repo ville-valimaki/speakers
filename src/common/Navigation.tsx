@@ -1,4 +1,4 @@
-import './styles/Navigation.css';
+import '../styles/Navigation.css';
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
@@ -13,17 +13,17 @@ function Navigation() {
         </div>
         <div className="ContentQuarter MarginedSmall">
             <div className="NavItem">
-                <a href="/crossovers" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/crossovers', { replace: true })}}>Crossovers</a>
+                <a href="/speakers/src/pages/Crossovers" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/crossovers', { replace: true })}}>Crossovers</a>
             </div>
         </div>
         <div className="ContentQuarter MarginedSmall">
             <div className="NavItem">
-                <a href="/amplifiers" className="NavLink"onClick={(event) => {event.preventDefault(); navigate('/amplifiers', { replace: true })}}>Amplifiers</a>
+                <a href="/speakers/src/pages/Amplifiers" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/amplifiers', { replace: true })}}>Amplifiers</a>
             </div>
         </div>
         <div className="ContentQuarter MarginedSmall">
             <div className="NavItem">
-                <a href="/links" className="NavLink"onClick={(event) => {event.preventDefault(); navigate('/links', { replace: true })}}>Links</a>
+                <a href="/speakers/src/pages/Links" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/links', { replace: true })}}>Links</a>
             </div>
         </div>
     </div>

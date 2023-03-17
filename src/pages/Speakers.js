@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import ReactGA from "react-ga4";
 
 import '../styles/Inputs.css';
 import '../styles/Speakers.css';
 
 import { Calculator } from "../util/Calculator";
-
-ReactGA.send({ hitType: "pageview", page: "/speakers" });
 
 class Speakers extends Component {
 

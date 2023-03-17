@@ -2,19 +2,22 @@
   "name": "speakers",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "history": "^5.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-ga4": "^2.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
-    "stylelint": "^14.9.0"
-  },
-  "devDependencies": {
+    "stylelint": "^14.9.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
-    "@testing-library/user-event": "^13.5.0"
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^4.9.5"
   },
   "engines": {
     "npm": ">=7.0.0",
