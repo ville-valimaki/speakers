@@ -1,31 +1,44 @@
-import React, { Component } from 'react';
+import React from 'react';
+import LinkSources from '../resources/LinkSources';
+import { ISourceList, ISource } from  '../resources/LinkSources';
 
-class Links extends Component {
+interface IProps {}
+
+interface IState {
+    links?: ISourceList;
+}
+
+class Links extends React.Component<IProps, IState> {
+
+    constructor(props: IProps) {
+        super(props);
+        this.state = {
+            links: LinkSources
+        };
+    }
 
     render () {
         return (
             <div className="ContentContainer MarginedSmall">
                 <div className="ContentFull Margined PaddedOnSmall">
-                    <h2 className="paddingMedium">Links and resources</h2>
+                    <h2 className="PaddingMedium">Links and resources</h2>
                     <p>Since this site is nothing else but a small glimpse of what is related to speaker designing, how to address correct frequencies to right elements and give enough power for the elements; we have here a list of hopefully helpful links related to diy hifi.</p>
                 </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <h4>Crossover calculator</h4>
-                </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <a target="_blank" rel="noreferrer" href="https://www.v-cap.com/speaker-crossover-calculator.php">V-cap</a>
-                </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <h4>Enclosure theory</h4>
-                </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <a target="_blank" rel="noreferrer" href="http://www.quarter-wave.com/">Quarter wave</a>
-                </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <h4>Rectifying basics</h4>
-                </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <a target="_blank" rel="noreferrer" href="https://www.electronicsforu.com/technology-trends/learn-electronics/half-full-wave-rectifier-basics">Electronics forum</a>
+                <div className="V2Content V2HPaddedOnSmall">
+                {
+                    this.state.links?.map((link: ISource, index: number) => {
+                        return (
+                            <div className="V2ContentHalf V2VPaddingMedium" key={index}>
+                                <div className="V2ContentHalfFixed">
+                                    <h4>{link.title}</h4>
+                                </div>
+                                <div className="V2ContentHalfFixed">
+                                    <a target="_blank" rel="noreferrer" href="https://www.v-cap.com/speaker-crossover-calculator.php">{link.text}</a>
+                                </div>
+                            </div>
+                        );
+                    })
+                }
                 </div>
             </div>
         );

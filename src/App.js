@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import './styles/Layout.css';
+import './styles/LayoutV2.css';
 import Header from './common/Header';
 import Navigation from './common/Navigation';
 import Speakers from './pages/Speakers';

@@ -42,8 +42,8 @@ class Speakers extends Component {
         return (
         <div className="ContentContainer MarginedSmall">
             <div className="ContentFull Margined PaddedOnSmall">
-                <h2 className="paddingMedium">Speaker enclosures</h2>
-                <p className="paddingSmall">With this calculator you can calculate cabinet sizes and tuning frequencies based on the given speaker Thiele-Small parameters for closed and reflex cabinets.</p>
+                <h2 className="PaddingMedium">Speaker enclosures</h2>
+                <p className="PaddingSmall">With this calculator you can calculate cabinet sizes and tuning frequencies based on the given speaker Thiele-Small parameters for closed and reflex cabinets.</p>
                 <p>Closed enclosure will provide a neutral Butterworth 2nd degree style rolloff and reflex cabinet a steep Butterworth 4th degree style rolloff.</p>
             </div>
             <div className="ContentFull MarginedSmall PaddedOnSmall">

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Amplifiers extends Component {
+class Amplifiers extends React.Component {
 
     constructor(props) {
         super(props);
@@ -11,8 +11,8 @@ class Amplifiers extends Component {
         return (
             <div className="ContentContainer MarginedSmall">
                 <div className="ContentFull Margined PaddedOnSmall">
-                    <h2 className="paddingMedium">Amplifiers</h2>
-                    <p className="paddingSmall">With these introductions you will gain some basic understanding of concepts that are related in designing and building your own amplifier. Questions answered are:</p>
+                    <h2 className="PaddingMedium">Amplifiers</h2>
+                    <p className="PaddingSmall">With these introductions you will gain some basic understanding of concepts that are related in designing and building your own amplifier. Questions answered are:</p>
                     <ul>
                         <li>How to rectify AC to DC</li>
                         <li>Rectifying basics</li>

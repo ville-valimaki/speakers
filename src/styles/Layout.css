@@ -74,15 +74,15 @@
   padding-left:var(--gutterHalf);
 }
 
-.paddingSmall {
+.PaddingSmall {
   padding-bottom: var(--gutterMini);
 }
 
-.paddingMedium {
+.PaddingMedium {
   padding-bottom: var(--gutterHalf);
 }
 
-.paddingLarge {
+.PaddingLarge {
   padding-bottom: var(--gutter);
 }
 

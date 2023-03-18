@@ -45,8 +45,8 @@ class Crossovers extends Component {
         return (
             <div className="ContentContainer MarginedSmall">
                 <div className="ContentFull Margined PaddedOnSmall">
-                  <h2 className="paddingMedium">Crossovers</h2>
-                  <p className="paddingSmall">With this calculator you can calculate the wanted capacitor and inductor values for creating an
+                  <h2 className="PaddingMedium">Crossovers</h2>
+                  <p className="PaddingSmall">With this calculator you can calculate the wanted capacitor and inductor values for creating an
                       crossover circuit for first or second degree crossover. The same values for the cutoff frequency apply
                       whether you are doing a low-, high- or bandpass crossover.</p>
                     <p>This example contains a setup of one driver and one tweeter, but by doing multiple calculations you can define as many elements as wanted.</p>

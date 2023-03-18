@@ -1,0 +1,51 @@
+.V2Content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.V2ContentFull {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.V2ContentHalf {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.V2ContentHalfFixed {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.V2HPaddedOnSmall {
+    padding: 0 var(--gutterHalf);
+}
+
+.V2VPaddingSmall {
+    padding-bottom: var(--gutterMini);
+}
+
+.V2VPaddingMedium {
+    padding-bottom: var(--gutterHalf);
+}
+
+.V2VPaddingLarge {
+    padding-bottom: var(--gutter);
+}
+
+@media screen and (min-width: 768px) {
+    .V2ContentHalf {
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .V2HPaddedOnSmall {
+        padding: 0;
+    }
+}
