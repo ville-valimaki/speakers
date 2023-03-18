@@ -23,7 +23,8 @@
 }
 
 .V2HPaddedOnSmall {
-    padding: 0 var(--gutterHalf);
+    padding-left: var(--gutterHalf);
+    padding-right: var(--gutterHalf);
 }
 
 .V2VPaddingSmall {
@@ -46,6 +47,7 @@
     }
 
     .V2HPaddedOnSmall {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
