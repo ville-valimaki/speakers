@@ -1,13 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import '../styles/Inputs.css';
 import '../styles/Speakers.css';
 
-import { Calculator } from "../util/Calculator";
+import Calculator from "../util/Calculator";
 
-class Speakers extends Component {
+interface IProps {}
 
-    constructor(props) {
+interface IState {
+    qts: number | null,
+    qms: number | null,
+    vas: number | null,
+    fs: number | null,
+
+    vbClosed: string,
+    frClosed: string,
+    vbReflex: string,
+    fbReflex: string,
+    f3Reflex: string,
+}
+
+class Speakers extends React.Component<IProps, IState> {
+
+    constructor(props: IProps) {
         super(props);
         this.state = {
             qts: null,
@@ -24,6 +39,7 @@ class Speakers extends Component {
     }
 
     updateEnclosureCalculation = () => {
+        console.log(this.state.qts, this.state.vas, this.state.fs);
         if (this.state.qts && this.state.vas && this.state.fs) {
             const calculator = new Calculator();
             const result = calculator.calculate(this.state.qts, this.state.vas, this.state.fs);
@@ -53,7 +69,7 @@ class Speakers extends Component {
                 <label className="Label">
                     <span>Qts</span>
                     <input className="Input" type="text" onChange={(event) => this.setState(
-                        { qts: event.target.value },
+                        { qts: Number(event.target.value) },
                         this.updateEnclosureCalculation
                         )} />
                 </label>
@@ -62,7 +78,7 @@ class Speakers extends Component {
                 <label className="Label">
                     <span>Qms</span>
                     <input className="Input" type="text" onChange={(event) => this.setState(
-                        { qms: event.target.value },
+                        { qms: Number(event.target.value) },
                         this.updateEnclosureCalculation
                         )} />
                 </label>
@@ -71,7 +87,7 @@ class Speakers extends Component {
                 <label className="Label">
                     <span>Vas</span>
                     <input className="Input" type="text" onChange={(event) => this.setState(
-                        { vas: event.target.value },
+                        { vas: Number(event.target.value) },
                         this.updateEnclosureCalculation
                         )}/>
                 </label>
@@ -80,7 +96,7 @@ class Speakers extends Component {
                 <label className="Label">
                     <span>Fs</span>
                     <input className="Input" type="text" onChange={(event) => this.setState(
-                        { fs: event.target.value },
+                        { fs: Number(event.target.value) },
                         this.updateEnclosureCalculation
                         )}/>
                 </label>
