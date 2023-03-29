@@ -1,8 +1,28 @@
-export class Calculator {
+interface IClosedResult {
+    fr: number|null,
+    vb: number|null
+}
 
-    /**
-     * todo: qtot as parameter aswell?
-     */
+interface IReflexResult {
+    fb: number|null,
+    f3: number|null,
+    vb: number|null,
+}
+
+interface ICalculator {
+    qtot: number,
+    closed: IClosedResult,
+    reflex: IReflexResult,
+    calculate(qts: number, vas: number, fs: number): {closed: IClosedResult, reflex: IReflexResult},
+}
+
+export default class Calculator implements ICalculator {
+
+    qtot: number
+    closed: IClosedResult
+    reflex: IReflexResult
+
+
     constructor() {
         this.qtot = 0.707;
         this.closed = {
@@ -117,7 +137,7 @@ export class Calculator {
             {qts: 0.60, values: {alpha: 0.27, h: 0.68, ratio: 0.59}},
         ];
 
-        const result = data.find(content => content.qts === parseFloat(qts));
+        const result = data.find(content => content.qts === qts);
 
         return result ? result.values : {alpha: 0, h: 0, ratio: 0};
     }

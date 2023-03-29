@@ -5,7 +5,7 @@ import { ISourceList, ISource } from  '../resources/LinkSources';
 interface IProps {}
 
 interface IState {
-    links?: ISourceList;
+    links: ISourceList;
 }
 
 class Links extends React.Component<IProps, IState> {
@@ -26,7 +26,7 @@ class Links extends React.Component<IProps, IState> {
                 </div>
                 <div className="V2ContentFull V2HPaddedOnSmall">
                 {
-                    this.state.links?.map((link: ISource, index: number) => {
+                    this.state.links.map((link: ISource, index: number) => {
                         return (
                             <div className="V2ContentHalf V2VPaddingMedium" key={index}>
                                 <div className="V2ContentHalfFixed">
