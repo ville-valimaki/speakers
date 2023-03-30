@@ -16,6 +16,12 @@
     flex-flow: row wrap;
 }
 
+.V2ContentQuarter {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .V2ContentHalfFixed {
     width: 50%;
     display: flex;
@@ -42,6 +48,12 @@
 @media screen and (min-width: 768px) {
     .V2ContentHalf {
         width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .V2ContentQuarter {
+        width: 25%;
         display: flex;
         flex-flow: row wrap;
     }

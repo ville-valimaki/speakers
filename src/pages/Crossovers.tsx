@@ -60,66 +60,74 @@ class Crossovers extends React.Component<IProps, IState> {
     render () {
         return (
             <div className="ContentContainer MarginedSmall">
-                <div className="ContentFull Margined PaddedOnSmall">
+                <div className="V2ContentFull V2HPaddedOnSmall">
                   <h2 className="PaddingMedium">Crossovers</h2>
                   <p className="PaddingSmall">With this calculator you can calculate the wanted capacitor and inductor values for creating an
                       crossover circuit for first or second degree crossover. The same values for the cutoff frequency apply
                       whether you are doing a low-, high- or bandpass crossover.</p>
                     <p>This example contains a setup of one driver and one tweeter, but by doing multiple calculations you can define as many elements as wanted.</p>
                 </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <label className="Label">
-                        <span>Driver ohm</span>
-                        <input className="Input" type="text" onChange={(event) => this.setState(
-                            { r1: Number(event.target.value) },
-                            this.updateCrossover
-                        )} />
-                    </label>
+                <div className="V2ContentFull V2HPaddedOnSmall">
+                    <div className="V2ContentQuarter">
+                        <label className="Label">
+                            <span>Driver ohm</span>
+                            <input className="Input" type="text" onChange={(event) => this.setState(
+                                { r1: Number(event.target.value) },
+                                this.updateCrossover
+                            )} />
+                        </label>
+                    </div>
+                    <div className="V2ContentQuarter">
+                        <label className="Label">
+                            <span>Tweeter ohm</span>
+                            <input className="Input" type="text" onChange={(event) => this.setState(
+                                { r2: Number(event.target.value) },
+                                this.updateCrossover
+                            )} />
+                        </label>
+                    </div>
                 </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <label className="Label">
-                        <span>Tweeter ohm</span>
-                        <input className="Input" type="text" onChange={(event) => this.setState(
-                            { r2: Number(event.target.value) },
-                            this.updateCrossover
-                        )} />
-                    </label>
+                <div className="V2ContentFull V2HPaddedOnSmall">
+                    <div className="V2ContentQuarter">
+                        <label className="Label">
+                            <span>Lowpass Freq</span>
+                            <input className="Input" type="text" onChange={(event) => this.setState(
+                                { fLow: Number(event.target.value) },
+                                this.updateCrossover
+                            )} />
+                        </label>
+                    </div>
+                    <div className="V2ContentQuarter">
+                        <label className="Label">
+                            <span>Highpass Freq</span>
+                            <input className="Input" type="text" onChange={(event) => this.setState(
+                                { fHigh: Number(event.target.value) },
+                                this.updateCrossover
+                            )} />
+                        </label>
+                    </div>
                 </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <label className="Label">
-                        <span>Lowpass Freq</span>
-                        <input className="Input" type="text" onChange={(event) => this.setState(
-                            { fLow: Number(event.target.value) },
-                            this.updateCrossover
-                        )} />
-                    </label>
+                <div className="V2ContentFull V2HPaddedOnSmall">
+                    <div className="V2ContentHalf">
+                        <h3>First degree</h3>
+                        <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.firstL1}</p>
+                        <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.firstC1}</p>
+                    </div>
+                    <div className="V2ContentHalf">
+                        <img className="CrossoverImg" src={crossover1} alt="First degree crossover" />
+                    </div>
                 </div>
-                <div className="ContentQuarter MarginedSmall PaddedOnSmall">
-                    <label className="Label">
-                        <span>Highpass Freq</span>
-                        <input className="Input" type="text" onChange={(event) => this.setState(
-                            { fHigh: Number(event.target.value) },
-                            this.updateCrossover
-                        )} />
-                    </label>
-                </div>
-                <div className="ContentHalf MarginedSmall PaddedOnSmall">
-                    <h3>First degree</h3>
-                    <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.firstL1}</p>
-                    <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.firstC1}</p>
-                </div>
-                <div className="ContentHalf MarginedSmall PaddedOnSmall">
-                    <img className="CrossoverImg" src={crossover1} alt="First degree crossover" />
-                </div>
-                <div className="ContentHalf MarginedSmall PaddedOnSmall">
-                    <h3>Second degree</h3>
-                    <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.secondL1}</p>
-                    <p className="ResultElement FloatOnSmall">L2 (mH): {this.state.secondL2}</p>
-                    <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.secondC1}</p>
-                    <p className="ResultElement FloatOnSmall">C2 (µF): {this.state.secondC2}</p>
-                </div>
-                <div className="ContentHalf MarginedSmall PaddedOnSmall">
-                    <img className="CrossoverImg" src={crossover2} alt="Second degree crossover" />
+                <div className="V2ContentFull V2HPaddedOnSmall">
+                    <div className="V2ContentHalf">
+                        <h3>Second degree</h3>
+                        <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.secondL1}</p>
+                        <p className="ResultElement FloatOnSmall">L2 (mH): {this.state.secondL2}</p>
+                        <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.secondC1}</p>
+                        <p className="ResultElement FloatOnSmall">C2 (µF): {this.state.secondC2}</p>
+                    </div>
+                    <div className="V2ContentHalf ">
+                        <img className="CrossoverImg" src={crossover2} alt="Second degree crossover" />
+                    </div>
                 </div>
             </div>
         );

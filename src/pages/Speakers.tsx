@@ -1,7 +1,6 @@
 import React from 'react';
 
 import '../styles/Inputs.css';
-import '../styles/Speakers.css';
 
 import Calculator from "../util/Calculator";
 

@@ -1,6 +1,7 @@
 .CrossoverImg {
     width: 100%;
     max-width: 98%;
+    border-radius: var(--gutterMini);
 }
 
 .ResultElement.FloatOnSmall {
