@@ -86,8 +86,6 @@ class Crossovers extends React.Component<IProps, IState> {
                             )} />
                         </label>
                     </div>
-                </div>
-                <div className="V2ContentFull V2HPaddedOnSmall">
                     <div className="V2ContentQuarter">
                         <label className="Label">
                             <span>Lowpass Freq</span>
