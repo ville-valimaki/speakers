@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { CrossoverCalculator } from "../util/CrossoverCalculator";
+import React from 'react';
+import CrossoverCalculator from "../util/CrossoverCalculator";
 
 import crossover1 from '../img/crossover1.png';
 import crossover2 from '../img/crossover2.png';
@@ -7,9 +7,25 @@ import crossover2 from '../img/crossover2.png';
 import '../styles/Inputs.css';
 import '../styles/Crossovers.css';
 
-class Crossovers extends Component {
+interface IProps {}
 
-    constructor(props) {
+interface IState {
+    r1: number | null,
+    r2: number | null,
+    fLow: number | null,
+    fHigh: number | null,
+
+    firstL1: number | null,
+    firstC1: number | null,
+    secondL1: number | null,
+    secondC1: number | null,
+    secondL2: number | null,
+    secondC2: number | null,
+}
+
+class Crossovers extends React.Component<IProps, IState> {
+
+    constructor(props: IProps) {
         super(props);
         this.state = {
             r1: null,
@@ -17,12 +33,12 @@ class Crossovers extends Component {
             fLow: null,
             fHigh: null,
 
-            firstL1: '-',
-            firstC1: '-',
-            secondL1: '-',
-            secondC1: '-',
-            secondL2: '-',
-            secondC2: '-',
+            firstL1: null,
+            firstC1: null,
+            secondL1: null,
+            secondC1: null,
+            secondL2: null,
+            secondC2: null,
         };
     }
 
@@ -55,7 +71,7 @@ class Crossovers extends Component {
                     <label className="Label">
                         <span>Driver ohm</span>
                         <input className="Input" type="text" onChange={(event) => this.setState(
-                            { r1: event.target.value },
+                            { r1: Number(event.target.value) },
                             this.updateCrossover
                         )} />
                     </label>
@@ -64,7 +80,7 @@ class Crossovers extends Component {
                     <label className="Label">
                         <span>Tweeter ohm</span>
                         <input className="Input" type="text" onChange={(event) => this.setState(
-                            { r2: event.target.value },
+                            { r2: Number(event.target.value) },
                             this.updateCrossover
                         )} />
                     </label>
@@ -73,7 +89,7 @@ class Crossovers extends Component {
                     <label className="Label">
                         <span>Lowpass Freq</span>
                         <input className="Input" type="text" onChange={(event) => this.setState(
-                            { fLow: event.target.value },
+                            { fLow: Number(event.target.value) },
                             this.updateCrossover
                         )} />
                     </label>
@@ -82,25 +98,25 @@ class Crossovers extends Component {
                     <label className="Label">
                         <span>Highpass Freq</span>
                         <input className="Input" type="text" onChange={(event) => this.setState(
-                            { fHigh: event.target.value },
+                            { fHigh: Number(event.target.value) },
                             this.updateCrossover
                         )} />
                     </label>
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <h3>First degree</h3>
-                    <p className="ResultElement FloatOnSmall">L1: {this.state.firstL1}</p>
-                    <p className="ResultElement FloatOnSmall">C1: {this.state.firstC1}</p>
+                    <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.firstL1}</p>
+                    <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.firstC1}</p>
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <img className="CrossoverImg" src={crossover1} alt="First degree crossover" />
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <h3>Second degree</h3>
-                    <p className="ResultElement FloatOnSmall">L1: {this.state.secondL1}</p>
-                    <p className="ResultElement FloatOnSmall">L2: {this.state.secondL2}</p>
-                    <p className="ResultElement FloatOnSmall">C1: {this.state.secondC1}</p>
-                    <p className="ResultElement FloatOnSmall">C2: {this.state.secondC2}</p>
+                    <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.secondL1}</p>
+                    <p className="ResultElement FloatOnSmall">L2 (mH): {this.state.secondL2}</p>
+                    <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.secondC1}</p>
+                    <p className="ResultElement FloatOnSmall">C2 (µF): {this.state.secondC2}</p>
                 </div>
                 <div className="ContentHalf MarginedSmall PaddedOnSmall">
                     <img className="CrossoverImg" src={crossover2} alt="Second degree crossover" />

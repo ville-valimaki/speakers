@@ -1,16 +1,37 @@
-export class CrossoverCalculator {
+interface IFirstDegreeResult {
+    l1: number | null,
+    c1: number | null,
+}
 
-    constructor() {
-        this.firstDegree = {
-            l1: null,
-            c1: null,
-        }
-        this.secondDegree = {
-            l1: null,
-            l2: null,
-            c1: null,
-            c2: null,
-        }
+interface ISecondDegreeResult {
+    l1: number | null,
+    c1: number | null,
+    l2: number | null,
+    c2: number | null,
+}
+
+
+interface ICrossoverCalculator {
+    firstDegree: IFirstDegreeResult,
+    secondDegree: ISecondDegreeResult,
+
+    calculate(driverImpendance: number, tweeterImpendance: number, frequencyLow: number, frequencyHigh: number): {
+        firstDegree: IFirstDegreeResult,
+        secondDegree: ISecondDegreeResult,
+    },
+}
+
+export default class CrossoverCalculator implements ICrossoverCalculator {
+
+    firstDegree: IFirstDegreeResult = {
+        l1: null,
+        c1: null,
+    }
+    secondDegree: ISecondDegreeResult = {
+        l1: null,
+        l2: null,
+        c1: null,
+        c2: null,
     }
 
     /**
@@ -20,7 +41,7 @@ export class CrossoverCalculator {
      * @param tweeterImpendance ohm
      * @param frequencyLow hz
      * @param frequencyHigh hz
-     * @returns {{secondDegree: {l1: number, l2: number, c1: number, c2: number}, firstDegree: {l1: number, c1: number}}}
+     * @returns {secondDegree: {l1: number, l2: number, c1: number, c2: number}, firstDegree: {l1: number, c1: number}}
      */
     calculate = (driverImpendance: number, tweeterImpendance: number, frequencyLow: number, frequencyHigh: number) => {
         return {
@@ -34,7 +55,7 @@ export class CrossoverCalculator {
      * @param tweeterImpendance ohm
      * @param frequencyLow hz
      * @param frequencyHigh hz
-     * @returns {{l1: number, c1: number}}
+     * @returns {l1: number, c1: number}
      */
     calculateFirstDegree = (driverImpendance: number, tweeterImpendance: number, frequencyLow: number, frequencyHigh: number) => {
         return {
@@ -48,7 +69,7 @@ export class CrossoverCalculator {
      * @param tweeterImpendance ohm
      * @param frequencyLow hz
      * @param frequencyHigh hz
-     * @returns {{l1: number, l2: number, c1: number, c2: number}}
+     * @returns {l1: number, l2: number, c1: number, c2: number}
      */
     calculateSecondDegree = (driverImpendance: number, tweeterImpendance: number, frequencyLow: number, frequencyHigh: number) => {
         return {
@@ -58,5 +79,4 @@ export class CrossoverCalculator {
             c2: (113000 / (tweeterImpendance * frequencyLow)),
         }
     }
-
 }

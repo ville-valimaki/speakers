@@ -1,12 +1,12 @@
 interface IClosedResult {
-    fr: number|null,
-    vb: number|null
+    fr: number | null,
+    vb: number | null
 }
 
 interface IReflexResult {
-    fb: number|null,
-    f3: number|null,
-    vb: number|null,
+    fb: number | null,
+    f3: number | null,
+    vb: number | null,
 }
 
 interface ICalculator {
@@ -18,29 +18,22 @@ interface ICalculator {
 
 export default class Calculator implements ICalculator {
 
-    qtot: number
-    closed: IClosedResult
-    reflex: IReflexResult
-
-
-    constructor() {
-        this.qtot = 0.707;
-        this.closed = {
-            fr: null,
-            vb: null,
-        }
-        this.reflex = {
-            fb: null,
-            f3: null,
-            vb: null,
-        }
+    qtot: number = 0.707;
+    closed: IClosedResult = {
+        fr: null,
+        vb: null,
+    }
+    reflex: IReflexResult = {
+        fb: null,
+        f3: null,
+        vb: null,
     }
 
     /**
      * @param qts
      * @param vas
      * @param fs
-     * @returns {{closed: {fr: number, vb: number}, reflex: {fb: number, vb: number, f3: number}}}
+     * @returns {closed: {fr: number, vb: number}, reflex: {fb: number, vb: number, f3: number}}
      */
     calculate = (qts: number, vas: number, fs: number) => {
         return {
@@ -53,7 +46,7 @@ export default class Calculator implements ICalculator {
      * @param qts
      * @param vas
      * @param fs
-     * @returns {{fr: number, vb: number}}
+     * @returns {fr: number, vb: number}
      */
     calculateClosed = (qts: number, vas: number, fs: number) => {
         const alpha = (Math.pow(this.qtot, 2) / Math.pow(qts, 2)) - 1;
@@ -70,7 +63,7 @@ export default class Calculator implements ICalculator {
      * @param qts
      * @param vas
      * @param fs
-     * @returns {{fb: number, vb: number, f3: number}}
+     * @returns {fb: number, vb: number, f3: number}
      */
     calculateReflex = (qts: number, vas: number, fs: number) => {
 
@@ -89,7 +82,7 @@ export default class Calculator implements ICalculator {
 
     /**
      * @param qts
-     * @returns {{alpha: number, h: number, ratio: number}}
+     * @returns {alpha: number, h: number, ratio: number}
      * @private
      */
     _getHelperValuesByQts(qts: number) {

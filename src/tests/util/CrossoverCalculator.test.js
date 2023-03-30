@@ -1,4 +1,4 @@
-import { CrossoverCalculator } from "../../util/CrossoverCalculator";
+import CrossoverCalculator from "../../util/CrossoverCalculator";
 
 test('Calculates first degree values correctly', () => {
   const calculator = new CrossoverCalculator();
