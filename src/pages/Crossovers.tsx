@@ -60,15 +60,15 @@ class Crossovers extends React.Component<IProps, IState> {
     render () {
         return (
             <div className="ContentContainer MarginedSmall">
-                <div className="V2ContentFull V2HPaddedOnSmall">
+                <div className="V2ContentFull V2VPaddingLarge V2HPaddedOnSmall">
                   <h2 className="PaddingMedium">Crossovers</h2>
                   <p className="PaddingSmall">With this calculator you can calculate the wanted capacitor and inductor values for creating an
                       crossover circuit for first or second degree crossover. The same values for the cutoff frequency apply
                       whether you are doing a low-, high- or bandpass crossover.</p>
                     <p>This example contains a setup of one driver and one tweeter, but by doing multiple calculations you can define as many elements as wanted.</p>
                 </div>
-                <div className="V2ContentFull V2HPaddedOnSmall">
-                    <div className="V2ContentQuarter">
+                <div className="V2ContentFull V2VPaddingMedium V2HPaddedOnSmall">
+                    <div className="V2ContentQuarter V2VPaddingMedium">
                         <label className="Label">
                             <span>Driver ohm</span>
                             <input className="Input" type="text" onChange={(event) => this.setState(
@@ -77,7 +77,7 @@ class Crossovers extends React.Component<IProps, IState> {
                             )} />
                         </label>
                     </div>
-                    <div className="V2ContentQuarter">
+                    <div className="V2ContentQuarter V2VPaddingMedium">
                         <label className="Label">
                             <span>Tweeter ohm</span>
                             <input className="Input" type="text" onChange={(event) => this.setState(
@@ -86,7 +86,7 @@ class Crossovers extends React.Component<IProps, IState> {
                             )} />
                         </label>
                     </div>
-                    <div className="V2ContentQuarter">
+                    <div className="V2ContentQuarter V2VPaddingMedium">
                         <label className="Label">
                             <span>Lowpass Freq</span>
                             <input className="Input" type="text" onChange={(event) => this.setState(
@@ -95,7 +95,7 @@ class Crossovers extends React.Component<IProps, IState> {
                             )} />
                         </label>
                     </div>
-                    <div className="V2ContentQuarter">
+                    <div className="V2ContentQuarter V2VPaddingMedium">
                         <label className="Label">
                             <span>Highpass Freq</span>
                             <input className="Input" type="text" onChange={(event) => this.setState(
@@ -105,9 +105,9 @@ class Crossovers extends React.Component<IProps, IState> {
                         </label>
                     </div>
                 </div>
-                <div className="V2ContentFull V2HPaddedOnSmall">
-                    <div className="V2ContentHalf">
-                        <h3>First degree</h3>
+                <div className="V2ContentFull V2HPaddedOnSmall V2VPaddingMedium">
+                    <div className="V2ContentHalf Column V2VPaddingSmall">
+                        <h3 className="V2VPaddingSmall">First degree</h3>
                         <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.firstL1}</p>
                         <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.firstC1}</p>
                     </div>
@@ -115,15 +115,15 @@ class Crossovers extends React.Component<IProps, IState> {
                         <img className="CrossoverImg" src={crossover1} alt="First degree crossover" />
                     </div>
                 </div>
-                <div className="V2ContentFull V2HPaddedOnSmall">
-                    <div className="V2ContentHalf">
-                        <h3>Second degree</h3>
+                <div className="V2ContentFull V2HPaddedOnSmall V2VPaddingMedium">
+                    <div className="V2ContentHalf Column V2VPaddingSmall">
+                        <h3 className="V2VPaddingSmall">Second degree</h3>
                         <p className="ResultElement FloatOnSmall">L1 (mH): {this.state.secondL1}</p>
                         <p className="ResultElement FloatOnSmall">L2 (mH): {this.state.secondL2}</p>
                         <p className="ResultElement FloatOnSmall">C1 (µF): {this.state.secondC1}</p>
                         <p className="ResultElement FloatOnSmall">C2 (µF): {this.state.secondC2}</p>
                     </div>
-                    <div className="V2ContentHalf ">
+                    <div className="V2ContentHalf">
                         <img className="CrossoverImg" src={crossover2} alt="Second degree crossover" />
                     </div>
                 </div>

@@ -65,6 +65,10 @@ p, span, a, div {
   font-size: var(--fontSizeMedium);
 }
 
+label {
+  width: 90%;
+}
+
 ul {
   list-style-position: inside;
 }
