@@ -13,7 +13,7 @@ function Navigation() {
         </div>
         <div className="ContentQuarter MarginedSmall">
             <div className="NavItem">
-                <a href="/speakers/src/pages/Crossovers" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/crossovers', { replace: true })}}>Crossovers</a>
+                <a href="/speakers/src/pages/Crossovers.tsx" className="NavLink" onClick={(event) => {event.preventDefault(); navigate('/crossovers', { replace: true })}}>Crossovers</a>
             </div>
         </div>
         <div className="ContentQuarter MarginedSmall">
