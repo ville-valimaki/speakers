@@ -6,7 +6,7 @@
   font-size: var(--fontSizeMedium);
   padding: var(--gutterMini);
   display: block;
-  width: calc(100% - var(--gutter));
+  width: 100%;
 }
 
 .Label {

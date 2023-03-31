@@ -45,6 +45,13 @@
     padding-bottom: var(--gutter);
 }
 
+.V2ContentFull.Column,
+.V2ContentHalf.Column,
+.V2ContentQuarter.Column,
+.V2ContentHalfFixed.Column {
+    flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
     .V2ContentHalf {
         width: 50%;

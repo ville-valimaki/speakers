@@ -38,7 +38,6 @@ class Speakers extends React.Component<IProps, IState> {
     }
 
     updateEnclosureCalculation = () => {
-        console.log(this.state.qts, this.state.vas, this.state.fs);
         if (this.state.qts && this.state.vas && this.state.fs) {
             const calculator = new Calculator();
             const result = calculator.calculate(this.state.qts, this.state.vas, this.state.fs);

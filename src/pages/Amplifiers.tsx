@@ -23,7 +23,7 @@ class Amplifiers extends React.Component<IProps, IState> {
                         <li>Understanding the capacitor need</li>
                     </ul>
                 </div>
-                <div className="V2ContentHalf V2HPaddedOnSmall">
+                <div className="V2ContentHalf V2HPaddedOnSmall Column">
                     <h3 className="V2VPaddingSmall">Rectifying alternate current</h3>
                     <p className="V2VPaddingLarge">When converting AC to DC for amplifier usage there are two common ways to achive this.</p>
                     <h4 className="V2VPaddingSmall">Half wave rectifiers</h4>
@@ -31,7 +31,7 @@ class Amplifiers extends React.Component<IProps, IState> {
                     <h4 className="V2VPaddingSmall">Full wave rectifiers</h4>
                     <p className="V2VPaddingLarge">Full wave rectifiers require at least two diodes or optionally an diode bridge which is however a common component. Upside is that you will get less voltage ripple and require a smaller capacitor. It also however introduces requirements for the secondary AC coil of you transformer, most commonly a two secondary coil alignment where you can join the middle of the secondary coils together and route the other ends of the coil separately via the diodes.</p>
                 </div>
-                <div className="V2ContentHalf V2HPaddedOnSmall">
+                <div className="V2ContentHalf V2HPaddedOnSmall Column">
                     <h3 className="V2VPaddingSmall">Capacitors</h3>
                     <p className="V2VPaddingSmall">Having correct sized capacitors is a very crucial part of having great sounding setup. Many hifi enthusiasts even improve commercial amplifiers by upgrading the capacitors in the amplifier.</p>
                     <p className="V2VPaddingSmall">To underline their biggest responsibility in the power supply chain: it is their responsibility to cope with the sudden power surges your system might require. If this drain for power is not sufficiently met your system can sound weak, lacking or muddy.</p>
