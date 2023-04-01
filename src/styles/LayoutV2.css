@@ -45,6 +45,10 @@
     padding-bottom: var(--gutter);
 }
 
+.V2VPaddingMediumOnSmall {
+    padding-bottom: var(--gutterHalf);
+}
+
 .V2ContentFull.Column,
 .V2ContentHalf.Column,
 .V2ContentQuarter.Column,
@@ -68,6 +72,10 @@
     .V2HPaddedOnSmall {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .V2VPaddingMediumOnSmall {
+        padding-bottom: 0;
     }
 
     .V2HRightPaddingOnLarge {

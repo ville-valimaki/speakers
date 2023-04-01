@@ -1,3 +1,9 @@
+.Header {
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
+  text-align: center;
+}
+
 .Header1 {
   color: var(--orange);
   font-size: var(--fontSizeLarge);
