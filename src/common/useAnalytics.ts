@@ -15,5 +15,3 @@ export function useAnalytics() {
         analytics.sendPageview(path);
     }, [location]);
 }
-
-export default useAnalytics;
