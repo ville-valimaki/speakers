@@ -13,7 +13,7 @@ class Amplifiers extends React.Component<IProps, IState> {
 
     render() {
         return (
-            <div className="ContentContainer MarginedSmall">
+            <div className="ContentContainer">
                 <div className="V2ContentFull V2HPaddedOnSmall V2VPaddingLarge">
                     <h2 className="V2VPaddingMedium">Amplifiers</h2>
                     <p className="V2VPaddingSmall V2HRightPaddingOnLarge">With these introductions you will gain some basic understanding of concepts that are related in designing and building your own amplifier. Questions answered are:</p>

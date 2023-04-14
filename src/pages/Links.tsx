@@ -21,7 +21,7 @@ class Links extends React.Component<IProps, IState> {
         return (
             <div className="ContentContainer MarginedSmall">
                 <div className="V2ContentFull V2HPaddedOnSmall V2VPaddingLarge">
-                    <h2 className="PaddingMedium">Links and resources</h2>
+                    <h2 className="V2VPaddingMedium">Links and resources</h2>
                     <p>Since this site is nothing else but a small glimpse of what is related to speaker designing, how to address correct frequencies to right elements and give enough power for the elements; we have here a list of hopefully helpful links related to diy hifi.</p>
                 </div>
                 <div className="V2ContentFull V2HPaddedOnSmall">
