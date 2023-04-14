@@ -1,3 +1,11 @@
+.ContentContainer {
+    width:100%;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
 .V2Content {
     width: 100%;
     display: flex;
@@ -80,5 +88,11 @@
 
     .V2HRightPaddingOnLarge {
         padding-right: var(--gutterHalf);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ContentContainer {
+        width: var(--breakpoint);
     }
 }

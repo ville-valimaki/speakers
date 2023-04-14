@@ -54,7 +54,7 @@ class Speakers extends React.Component<IProps, IState> {
 
     render () {
         return (
-        <div className="ContentContainer MarginedSmall">
+        <div className="ContentContainer">
             <div className="V2ContentFull V2HPaddedOnSmall V2VPaddingLarge">
                 <h2 className="V2VPaddingMedium">Speaker enclosures</h2>
                 <p className="V2VPaddingSmall">With this calculator you can calculate cabinet sizes and tuning frequencies based on the given speaker Thiele-Small parameters for closed and reflex cabinets.</p>
