@@ -33,7 +33,7 @@ class Links extends React.Component<IProps, IState> {
                                     <h4>{link.title}</h4>
                                 </div>
                                 <div className="V2ContentHalfFixed">
-                                    <a target="_blank" rel="noreferrer" href="https://www.v-cap.com/speaker-crossover-calculator.php">{link.text}</a>
+                                    <a target="_blank" rel="noreferrer" href={link.link}>{link.text}</a>
                                 </div>
                             </div>
                         );
